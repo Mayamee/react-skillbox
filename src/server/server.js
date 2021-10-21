@@ -1,10 +1,14 @@
 import express from "express";
-// const express = require("express");
+import ReactDOM from "react-dom/server";
+import { Header } from "../shared/Header";
+import { indexTemplate } from "./indexTemplate";
+const PORT = process.env.PORT || 3000;
 const app = express();
-const PORT = process.env.PORT ?? 3000;
+
+app.use("/static", express.static("./dist/client"));
 
 app.get("/", (req, res) => {
-  res.send("Hello world!");
+  res.send(indexTemplate(ReactDOM.renderToString(Header())));
 });
 
 app.listen(PORT, () => {
