@@ -21,7 +21,7 @@ module.exports = {
         use: ["ts-loader"],
       },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         use: [
           {
             loader: "css-loader",
@@ -33,6 +33,7 @@ module.exports = {
               },
             },
           },
+          "less-loader",
         ],
       },
     ],

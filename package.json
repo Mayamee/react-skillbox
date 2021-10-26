@@ -37,6 +37,8 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.4.0",
     "html-webpack-plugin": "^5.4.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
     "react-hot-loader": "^4.13.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.2.6",
