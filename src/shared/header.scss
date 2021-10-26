@@ -1,0 +1,6 @@
+.example {
+  color: red;
+  & {
+    background-color: #000;
+  }
+}
