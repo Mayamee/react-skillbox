@@ -8,7 +8,7 @@
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "dev:ssr": "cross-env NODE_ENV=development node bin/dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
@@ -34,13 +34,16 @@
   },
   "devDependencies": {
     "@hot-loader/react-dom": "^17.0.1",
+    "@types/jest": "^27.0.2",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.4.0",
     "html-webpack-plugin": "^5.4.0",
+    "jest": "^27.3.1",
     "node-sass": "^6.0.1",
     "react-hot-loader": "^4.13.0",
     "sass-loader": "^12.2.0",
     "style-loader": "^3.3.1",
+    "ts-jest": "^27.0.7",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.4",
     "webpack": "^5.58.2",
